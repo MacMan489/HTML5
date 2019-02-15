@@ -1,0 +1,20 @@
+Create an HTML5 document that uses an image (of your choice) as an e-mail link. 
+Use attribute alt to provide a description of the image and link.   Call your program MyMail.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>
+Clik on apple to send an email:
+</p>
+
+<a href="mailto:example@tutorialspark.com?Subject=Hello%20again" target="_top">
+<img src="http://juliandance.org/wp-content/uploads/2016/01/RedApple.jpg" width="80px" height="70px"
+alt="Red apple"/>
+</a>
+
+
+</body>
+</html>
