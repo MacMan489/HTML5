@@ -1,0 +1,188 @@
+A local university has asked you to create an HTML5 document that allows prospective college students to provide feedback 
+about their campus visit. Your HTML5 document should contain a form with text fields for a name and e-mail. 
+Provide checkboxes that allow perspective students to indicate what they liked most about the campus. 
+The checkboxes should include: campus, students, location, atmosphere, course offerings, dorm rooms, 
+resource center, sports. Also, provide radio buttons that ask the prospective students the main way they 
+became interested in the college. Options should include: friends (the default), relatives, television, 
+Internet, and other. In addition, provide a text area for additional comments, a submit button, and a reset button. 
+After the e-mail field in the form, add an input field for the user to enter the date visited the campus in 
+the form yyyy-mm-dd. Use the proper HTML5 input type. Call your program MyUniversity. In the forms action attribute, 
+add the destination MySchedule.html. Create an html page called MySchedule.html. Make sure that this page is in the 
+same directory folder as the html page containing the form so that relative addressing will work. In this page, 
+create a table for information about your schedule. The table should have two columns, one for the course number 
+and one for the course name. The columns have proper column headings, a header that states “My Schedule,” and a 
+footer that states how many courses you are taking. Be as creative with your table as you like. The more creative 
+(table attributes), the higher the score.
+
+
+
+
+
+
+
+MyUniversity.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My University</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+* {
+padding: 0;
+margin: 0;
+}
+body {
+text-transform: capitalize;
+}
+</style>
+  
+</head>
+<body>
+<div class="container">
+<h3 class="text-center">Feedback Form</h3>
+<form action="MySchedule.html">
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" class="form-control" id="name">
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" class="form-control" id="email">
+</div>
+<div class="form-group">
+<label for="date">Visited Date</label>
+<input type="date" id="Date_From" class="form-control">
+</div>
+<div class="form-group">
+<label>Most Liked</label>
+<div class="checkbox">
+<label class="checkbox-inline"><input type="checkbox" value="">
+Campus
+</label>
+<label class="checkbox-inline"><input type="checkbox" value="">
+Students
+</label>
+<label class="checkbox-inline"><input type="checkbox" value="">
+Location
+</label>
+<label class="checkbox-inline"><input type="checkbox" value="">
+atmosphere
+</label>
+<label class="checkbox-inline"><input type="checkbox" value="">
+course offerings
+</label>
+<label class="checkbox-inline"><input type="checkbox" value="">
+dorm rooms
+</label>
+<label class="checkbox-inline"><input type="checkbox" value="">
+resource center
+</label>
+<label class="checkbox-inline"><input type="checkbox" value="">
+sports.
+</label>
+</div>
+</div>
+<div class="form-group">
+<label> Became Interested</label>
+<div class="radio">
+<label class="radio-inline"><input type="radio" name="optradio" checked>
+friends
+</label>
+<label class="radio-inline"><input type="radio" name="optradio">
+relatives
+</label>
+<label class="radio-inline"><input type="radio" name="optradio">
+television
+</label>
+<label class="radio-inline"><input type="radio" name="optradio">
+Internet
+</label>
+<label class="radio-inline"><input type="radio" name="optradio">
+others
+</label>
+</div>
+</div>
+<div class="form-group">
+<label for="comment">Comment:</label>
+<textarea class="form-control" rows="3" id="comment"></textarea>
+</div>
+<button type="reset" class="btn btn-default">Reset</button>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
+
+MySchedule.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>My Schedule</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style>
+* {
+padding: 0;
+margin: 0;
+}
+body {
+padding-top: 50px
+}
+</style>
+  
+</head>
+<body>
+<div class="container">
+<table class="table table-bordered">
+<thead>
+<tr>
+<th colspan="2" class="text-center">My Schedule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="text-center">
+Course Number
+</th>
+<th class="text-center">
+Course Name
+</th>
+</tr>
+<tr>
+<td class="text-center">
+2257
+</td>
+<td class="text-center">Java</td>
+</tr>
+</tr>
+<tr>
+<td class="text-center">2259</td>
+<td class="text-center">JavaScript</td>
+</tr>
+<tr>
+<td class="text-center">2269</td>
+<td class="text-center">HTML</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th colspan="2" class="text-center">Courses your are taking : 3</th>
+</tr>
+</tfoot>
+</table>
+</div>
+
+</body>
+</html>
