@@ -1,0 +1,14 @@
+Create an HTML5 document that contains links to your favorite computer information websites. 
+Your page should contain the heading “My Favorite Web Sites.” Call your program MyLinks.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My Favorite Web Sites.</h2>
+<p><a href="https://techcrunch.com/">Tech crunch</a></p>
+<p><a href="https://in.linkedin.com/">Linked In </a></p>
+<p><a href="https://facebook.com/">Facebook social</a></p>
+
+</body>
+</html>
