@@ -1,0 +1,57 @@
+Write an HTML5 document that produces the table shown in figure 2.19 in the textbook Internet-and-World-Wide-Web-How-To-Program-5th-edition
+
+
+
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Table Example</title>
+</head>
+<body>
+<h2>Table Example Page</h2>
+<h5>Here is a small sample table</h5>
+<table style="border:1px solid black">
+<tr>
+<th style="border:1px solid black" colspan="2">This is the table head</th>
+</tr>
+<tr>
+<td style="border:1px solid black" colspan="2">This is the body</td>
+</tr>
+<tr>
+<th style="border:1px solid black">This is the table</th>
+   <th style="border:1px solid black">foot.</th>
+</tr>
+</table>
+</body>
+</html>
+
+OR
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Table Example</title>
+<style type = "text/css">
+table, td, th {
+border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<h2>Table Example Page</h2>
+<h5>Here is a small sample table</h5>
+<table>
+<tr>
+<th colspan="2">This is the table head</th>
+</tr>
+<tr>
+<td colspan="2">This is the body</td>
+</tr>
+<tr>
+<th>This is the table</th>
+   <th>foot.</th>
+</tr>
+</table>
+</body>
+</html>
